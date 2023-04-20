@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "..\\AWD files"
+		},
+		{
+			"path": "..\\HTML FILES"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AWD files",
+		"files.associations": {
+			"iostream": "cpp",
+			"iosfwd": "cpp"
+		}
+	}
+}

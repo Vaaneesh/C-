@@ -1,25 +1,26 @@
 #include <iostream>
 using namespace std;
- 
-class class1{
-public:
-    void print()
-    {
-        cout << "You called in Base class" << endl;
+
+class Base { //base class
+   public:
+    void print(int roll,int marks) {
+        cout << "Student details in base class" << endl;
+        cout<<marks;
+        cout<<roll;
     }
 };
- 
-class class2 : public class1 {
-public:
-    void print()
-    {
-        cout << "you called in Derived class" << endl;
+
+class Derived : public Base { //derived class created
+   public:
+    void print(int roll,int marks) {
+        cout << "Student details in Derived class" << endl;
+        cout<<roll<<endl;
+        cout<<marks;
     }
 };
- 
-int main()
-{
-    class2 obj;
-    obj.print();
+
+int main() {
+    Derived obj;
+    obj.print(20,90);
     return 0;
 }
